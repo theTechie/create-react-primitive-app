@@ -1,0 +1,26 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "node react-scripts/scripts/build.js",
+		"create-react-primitive-app": "tasks/crpa.sh",
+		"postinstall": "node bootstrap.js && cd packages/react-error-overlay/ && npm run build:prod",
+		"publish": "tasks/release.sh",
+		"precommit": "lint-staged",
+		"format": "prettier --single-quote --trailing-comma=es5 --print-width=100 --write '{create-react-app,create-react-primitive-app,react-error-overlay,react-primitive-scripts,react-scripts}/{src,template}/**/*.js'"
+	},
+	"devDependencies": {
+		"eslint": "^4.4.1",
+		"husky": "^0.13.2",
+		"lerna": "^2.0.0",
+		"lerna-changelog": "^0.6.0",
+		"lint-staged": "^3.3.1",
+		"prettier": "^1.5.2"
+	},
+	"lint-staged": {
+		"*.js": [
+			"prettier --trailing-comma es5 --single-quote --write",
+			"git add"
+		],
+		"yarn.lock": ["git rm --cached"]
+	}
+}
