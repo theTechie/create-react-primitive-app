@@ -1,17 +1,22 @@
 {
 	"name": "create-react-primitive-app",
-	"version": "1.0.0",
-	"description":
-		"Create React cross platform apps (cra and crna) with no build configuration.",
+	"version": "0.0.1",
+	"description": "Create React cross platform apps (cra and crna) with no build configuration.",
 	"license": "BSD-3-Clause",
-	"keywords": ["react-native", "react", "react-primitives"],
+	"keywords": [
+		"react-native",
+		"react",
+		"react-primitives"
+	],
 	"homepage": "https://github.com/theTechie/create-react-primitive-app",
 	"bugs": "https://github.com/theTechie/create-react-primitive-app",
 	"preferGlobal": true,
 	"engines": {
 		"node": ">=6"
 	},
-	"files": ["build"],
+	"files": [
+		"build"
+	],
 	"bin": {
 		"create-react-primitive-app": "./build/index.js"
 	},

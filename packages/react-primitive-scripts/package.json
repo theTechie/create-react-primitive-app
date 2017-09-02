@@ -3,13 +3,20 @@
 	"version": "0.0.1",
 	"description": "Configuration and scripts for Create React Primitive App.",
 	"license": "BSD-3-Clause",
-	"keywords": ["react-primitives", "react-native", "react"],
+	"keywords": [
+		"react-primitives",
+		"react-native",
+		"react"
+	],
 	"homepage": "https://github.com/theTechie/create-react-primitive-app",
 	"bugs": "https://github.com/theTechie/create-react-primitive-app",
 	"engines": {
 		"node": ">=6"
 	},
-	"files": ["build", "template"],
+	"files": [
+		"build",
+		"template"
+	],
 	"bin": {
 		"react-primitive-scripts": "./build/bin/react-primitive-scripts.js"
 	},
@@ -18,6 +25,7 @@
 		"build": "taskr build"
 	},
 	"dependencies": {
+		"@expo/bunyan": "1.8.10",
 		"babel-runtime": "^6.9.2",
 		"chalk": "^2.0.1",
 		"cross-spawn": "^5.0.1",
@@ -30,8 +38,7 @@
 		"progress": "^2.0.0",
 		"qrcode-terminal": "^0.11.0",
 		"rimraf": "^2.6.1",
-		"xdl": "44.0.0",
-		"@expo/bunyan": "1.8.10"
+		"xdl": "44.0.0"
 	},
 	"devDependencies": {
 		"@taskr/babel": "^1.0.6",
