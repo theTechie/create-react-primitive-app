@@ -79,7 +79,7 @@ publish it there. See this StackOverflow question for more information:
 
   pkgJson.main = 'node_modules/expo/AppEntry.js';
 
-  delete pkgJson.devDependencies['react-native-scripts'];
+  delete pkgJson.devDependencies['react-primitive-scripts'];
   delete pkgJson.scripts.start;
   delete pkgJson.scripts.build;
   delete pkgJson.scripts.eject;

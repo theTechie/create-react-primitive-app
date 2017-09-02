@@ -23,8 +23,8 @@ const argv = minimist(process.argv.slice(2));
  *   --package-manager <package manager name or path>
  *     Example of valid values:
  *     - a specific npm version: "0.22.0-rc1"
- *     - a .tgz archive from npm: "https://registry.npmjs.org/react-native-scripts/-/react-native-scripts-0.20.0.tgz"
- *     - a package from `tasks/clean_pack.sh`: "/home/adam/create-react-primitive-app/react-native-scripts-0.22.0.tgz"
+ *     - a .tgz archive from npm: "https://registry.npmjs.org/react-primitive-scripts/-/react-primitive-scripts-0.20.0.tgz"
+ *     - a package from `tasks/clean_pack.sh`: "/home/adam/create-react-primitive-app/react-primitive-scripts-0.22.0.tgz"
  */
 const commands = argv._;
 const cwd = process.cwd();
@@ -102,7 +102,7 @@ async function createApp(
     process.exit(1);
   }
 
-  console.log(`Creating a new React Native app in ${root}.`);
+  console.log(`Creating a new React Primitive app in ${root}.`);
   console.log();
 
   const packageJson = {
@@ -120,7 +120,7 @@ async function createApp(
     `Using package manager as ${packageManagerCmd()} with ${packageManagerType()} interface.`
   );
   console.log('Installing packages. This might take a couple minutes.');
-  console.log('Installing react-native-scripts...');
+  console.log('Installing react-primitive-scripts...');
   console.log();
 
   await run(root, appName, version, verbose, packageToInstall, packageName);
@@ -208,7 +208,7 @@ async function run(
 }
 
 function getInstallPackage(version: ?string): string {
-  let packageToInstall = 'react-native-scripts';
+  let packageToInstall = 'react-primitive-scripts';
   const validSemver = semver.valid(version);
   if (validSemver) {
     packageToInstall += `@${validSemver}`;
@@ -267,7 +267,7 @@ async function checkNodeVersion(packageName: string): Promise<void> {
 
 function checkAppName(appName: string, packageName: string): void {
   const allDependencies = [
-    'react-native-scripts',
+    'react-primitive-scripts',
     'exponent',
     'expo',
     'vector-icons',

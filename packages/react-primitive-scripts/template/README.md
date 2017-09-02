@@ -1,6 +1,6 @@
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-primitive-app).
+This project was bootstrapped with [Create React Native App](https://github.com/theTechie/create-react-primitive-app).
 
-Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-primitive-app/blob/master/react-primitive-scripts/template/README.md).
+Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/theTechie/create-react-primitive-app/blob/master/react-primitive-scripts/template/README.md).
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ You should only need to update the global installation of `create-react-primitiv
 
 Updating the `react-primitive-scripts` dependency of your app should be as simple as bumping the version number in `package.json` and reinstalling your project's dependencies.
 
-Upgrading to a new version of React Native requires updating the `react-native`, `react`, and `expo` package versions, and setting the correct `sdkVersion` in `app.json`. See the [versioning guide](https://github.com/react-community/create-react-primitive-app/blob/master/VERSIONS.md) for up-to-date information about package version compatibility.
+Upgrading to a new version of React Native requires updating the `react-native`, `react`, and `expo` package versions, and setting the correct `sdkVersion` in `app.json`. See the [versioning guide](https://github.com/theTechie/create-react-primitive-app/blob/master/VERSIONS.md) for up-to-date information about package version compatibility.
 
 ## Available Scripts
 
@@ -92,7 +92,7 @@ To set an app icon, set the `expo.icon` key in `app.json` to be either a local p
 
 ## Writing and Running Tests
 
-This project is set up to use [jest](https://facebook.github.io/jest/) for tests. You can configure whatever testing strategy you like, but jest works out of the box. Create test files in directories called `__tests__` or with the `.test` extension to have the files loaded by jest. See the [the template project](https://github.com/react-community/create-react-primitive-app/blob/master/react-primitive-scripts/template/App.test.js) for an example test. The [jest documentation](https://facebook.github.io/jest/docs/getting-started.html) is also a wonderful resource, as is the [React Native testing tutorial](https://facebook.github.io/jest/docs/tutorial-react-native.html).
+This project is set up to use [jest](https://facebook.github.io/jest/) for tests. You can configure whatever testing strategy you like, but jest works out of the box. Create test files in directories called `__tests__` or with the `.test` extension to have the files loaded by jest. See the [the template project](https://github.com/theTechie/create-react-primitive-app/blob/master/react-primitive-scripts/template/App.test.js) for an example test. The [jest documentation](https://facebook.github.io/jest/docs/getting-started.html) is also a wonderful resource, as is the [React Native testing tutorial](https://facebook.github.io/jest/docs/tutorial-react-native.html).
 
 ## Environment Variables
 
@@ -169,7 +169,7 @@ This is usually as simple as running `npm run eject` in your project, which will
 
 #### Should I Use ExpoKit?
 
-If you have made use of Expo APIs while working on your project, then those API calls will stop working if you eject to a regular React Native project. If you want to continue using those APIs, you can eject to "React Native + ExpoKit" which will still allow you to build your own native code and continue using the Expo APIs. See the [ejecting guide](https://github.com/react-community/create-react-primitive-app/blob/master/EJECTING.md) for more details about this option.
+If you have made use of Expo APIs while working on your project, then those API calls will stop working if you eject to a regular React Native project. If you want to continue using those APIs, you can eject to "React Native + ExpoKit" which will still allow you to build your own native code and continue using the Expo APIs. See the [ejecting guide](https://github.com/theTechie/create-react-primitive-app/blob/master/EJECTING.md) for more details about this option.
 
 ## Troubleshooting
 
@@ -195,7 +195,7 @@ and
 http://192.168.0.1:19001
 ```
 
-If this works, but you're still unable to load your app by scanning the QR code, please open an issue on the [Create React Native App repository](https://github.com/react-community/create-react-primitive-app) with details about these steps and any other error messages you may have received.
+If this works, but you're still unable to load your app by scanning the QR code, please open an issue on the [Create React Native App repository](https://github.com/theTechie/create-react-primitive-app) with details about these steps and any other error messages you may have received.
 
 If you're not able to load the `http` URL in your phone's web browser, try using the tethering/mobile hotspot feature on your phone (beware of data usage, though), connecting your computer to that WiFi network, and restarting the packager.
 
@@ -215,6 +215,6 @@ There are a few steps you may want to take to troubleshoot these kinds of errors
 
 ### QR Code does not scan
 
-If you're not able to scan the QR code, make sure your phone's camera is focusing correctly, and also make sure that the contrast on the two colors in your terminal is high enough. For example, WebStorm's default themes may [not have enough contrast](https://github.com/react-community/create-react-primitive-app/issues/49) for terminal QR codes to be scannable with the system barcode scanners that the Expo app uses.
+If you're not able to scan the QR code, make sure your phone's camera is focusing correctly, and also make sure that the contrast on the two colors in your terminal is high enough. For example, WebStorm's default themes may [not have enough contrast](https://github.com/theTechie/create-react-primitive-app/issues/49) for terminal QR codes to be scannable with the system barcode scanners that the Expo app uses.
 
 If this causes problems for you, you may want to try changing your terminal's color theme to have more contrast, or running Create React Native App from a different terminal. You can also manually enter the URL printed by the packager script in the Expo app's search bar to load it manually.

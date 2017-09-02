@@ -1,11 +1,11 @@
 {
 	"name": "react-primitive-scripts",
-	"version": "1.3.0",
-	"description": "Configuration and scripts for Create React Native App.",
+	"version": "0.0.1",
+	"description": "Configuration and scripts for Create React Primitive App.",
 	"license": "BSD-3-Clause",
-	"keywords": ["react-native", "react"],
-	"homepage": "https://github.com/react-community/create-react-primitive-app",
-	"bugs": "https://github.com/react-community/create-react-primitive-app",
+	"keywords": ["react-primitives", "react-native", "react"],
+	"homepage": "https://github.com/theTechie/create-react-primitive-app",
+	"bugs": "https://github.com/theTechie/create-react-primitive-app",
 	"engines": {
 		"node": ">=6"
 	},

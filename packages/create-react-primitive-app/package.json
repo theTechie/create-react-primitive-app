@@ -1,7 +1,8 @@
 {
 	"name": "create-react-primitive-app",
 	"version": "1.0.0",
-	"description": "Create React cross platform apps (cra and crna) with no build configuration.",
+	"description":
+		"Create React cross platform apps (cra and crna) with no build configuration.",
 	"license": "BSD-3-Clause",
 	"keywords": ["react-native", "react", "react-primitives"],
 	"homepage": "https://github.com/theTechie/create-react-primitive-app",
@@ -16,6 +17,7 @@
 	},
 	"scripts": {
 		"start": "taskr",
+		"prebuild": "rm -rf build",
 		"build": "taskr babel"
 	},
 	"dependencies": {

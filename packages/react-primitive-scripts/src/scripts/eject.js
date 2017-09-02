@@ -45,7 +45,7 @@ We ${chalk.italic(
         'strongly'
       )} recommend that you read this document before you proceed:
   ${chalk.cyan(
-    'https://github.com/react-community/create-react-primitive-app/blob/master/EJECTING.md'
+    'https://github.com/theTechie/create-react-primitive-app/blob/master/EJECTING.md'
   )}
 
 Ejecting is permanent! Please be careful with your selection.
@@ -231,7 +231,7 @@ from \`babel-preset-expo\` to \`babel-preset-react-native-stage-0/decorator-supp
       // it will be a better error message for the module to not be found than for whatever problems
       // missing native modules will cause
       delete pkgJson.dependencies.expo;
-      delete pkgJson.devDependencies['react-native-scripts'];
+      delete pkgJson.devDependencies['react-primitive-scripts'];
 
       pkgJson.scripts.start = 'react-native start';
       pkgJson.scripts.ios = 'react-native run-ios';

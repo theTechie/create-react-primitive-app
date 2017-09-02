@@ -13,6 +13,7 @@ const DEFAULT_DEPENDENCIES = {
   expo: '^20.0.0',
   react: '16.0.0-alpha.12',
   'react-native': '^0.47.0',
+  'react-primitives': '^0.4.3',
 };
 
 // TODO figure out how this interacts with ejection
@@ -78,12 +79,13 @@ https://github.com/npm/npm/issues/16991
 
   // mutate the default package.json in any ways we need to
   appPackage.main =
-    './node_modules/react-native-scripts/build/bin/crna-entry.js';
+    './node_modules/react-primitive-scripts/build/bin/crna-entry.js';
+
   appPackage.scripts = {
-    start: 'react-native-scripts start',
-    eject: 'react-native-scripts eject',
-    android: 'react-native-scripts android',
-    ios: 'react-native-scripts ios',
+    start: 'react-primitive-scripts start',
+    eject: 'react-primitive-scripts eject',
+    android: 'react-primitive-scripts android',
+    ios: 'react-primitive-scripts ios',
     test: 'node node_modules/jest/bin/jest.js --watch',
   };
 
@@ -99,7 +101,7 @@ https://github.com/npm/npm/issues/16991
     appPackage.devDependencies = {};
   }
 
-  // react-native-scripts is already in the package.json devDependencies
+  // react-primitive-scripts is already in the package.json devDependencies
   // so we need to merge instead of assigning
   Object.assign(appPackage.dependencies, DEFAULT_DEPENDENCIES);
   Object.assign(appPackage.devDependencies, DEFAULT_DEV_DEPENDENCIES);
