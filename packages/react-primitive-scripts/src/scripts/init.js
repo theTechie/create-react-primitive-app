@@ -10,16 +10,17 @@ import install from '../util/install';
 
 // UPDATE DEPENDENCY VERSIONS HERE
 const DEFAULT_DEPENDENCIES = {
-  expo: '^20.0.0',
-  react: '16.0.0-alpha.12',
-  'react-native': '^0.47.0',
+  expo: '^15.0.0',
+  react: '^15.4.1',
+  'react-dom': '^15.4.1',
+  'react-native': '^0.42.0',
   'react-primitives': '^0.4.3',
 };
 
 // TODO figure out how this interacts with ejection
 const DEFAULT_DEV_DEPENDENCIES = {
-  'jest-expo': '~20.0.0',
-  'react-test-renderer': '16.0.0-alpha.12',
+  'jest-expo': '^15.0.0',
+  'react-test-renderer': '^15.4.1',
 };
 
 module.exports = async (
@@ -82,11 +83,11 @@ https://github.com/npm/npm/issues/16991
     './node_modules/react-primitive-scripts/build/bin/crna-entry.js';
 
   appPackage.scripts = {
-    start: 'react-primitive-scripts start',
-    eject: 'react-primitive-scripts eject',
+    'start-native': 'react-primitive-scripts start',
+    'eject-native': 'react-primitive-scripts eject',
+    'test-native': 'node node_modules/jest/bin/jest.js --watch',
     android: 'react-primitive-scripts android',
     ios: 'react-primitive-scripts ios',
-    test: 'node node_modules/jest/bin/jest.js --watch',
   };
 
   appPackage.jest = {

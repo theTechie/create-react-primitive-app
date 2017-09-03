@@ -93,12 +93,23 @@ async function createApp(
   const packageName = getPackageName(packageToInstall);
   checkAppName(appName, packageName);
 
-  if (!await pathExists(name)) {
-    await fse.mkdir(root);
-  } else if (!await isSafeToCreateProjectIn(root)) {
-    console.log(
-      `The directory \`${name}\` contains file(s) that could conflict. Aborting.`
-    );
+  // NOTE: Override stuff from rca
+  // if (!await pathExists(name)) {
+  //   await fse.mkdir(root);
+  // } else if (!await isSafeToCreateProjectIn(root)) {
+  //   console.log(
+  //     `The directory \`${name}\` contains file(s) that could conflict. Aborting.`
+  //   );
+  //   process.exit(1);
+  // }
+
+  console.log(`Creating a new React app in ${root}.`);
+  console.log();
+
+  const result = spawn.sync('create-react-app', [name], { stdio: 'inherit' });
+
+  if (result.error || result.status !== 0) {
+    console.log('Error creating react-app');
     process.exit(1);
   }
 
