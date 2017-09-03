@@ -1,5 +1,5 @@
 import Expo from 'expo';
-import App from '../../../../src/App';
+import App from '../../../../App';
 import React, { Component } from 'react';
 import { View } from 'react-native';
 

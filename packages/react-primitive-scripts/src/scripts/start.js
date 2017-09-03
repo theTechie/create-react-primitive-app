@@ -19,7 +19,7 @@ import clearConsole from '../util/clearConsole';
 import packager from '../util/packager';
 
 Config.validation.reactNativeVersionWarnings = false;
-Config.developerTool = 'crpa';
+Config.developerTool = 'crna';
 Config.offline = true;
 
 const args = minimist(process.argv.slice(2), {

@@ -12,7 +12,7 @@ import log from '../util/log';
 import packager from '../util/packager';
 
 Config.validation.reactNativeVersionWarnings = false;
-Config.developerTool = 'crpa';
+Config.developerTool = 'crna';
 Config.offline = true;
 
 const command: string = pathExists.sync(path.join(process.cwd(), 'yarn.lock'))
