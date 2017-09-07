@@ -22,7 +22,7 @@ Error text goes here!
 
 Please run these commands in the project folder and fill in their results:
 
-* `npm ls react-native-scripts`:
+* `npm ls react-primitive-scripts`:
 * `npm ls react-native`:
 * `npm ls expo`:
 * `node -v`:
