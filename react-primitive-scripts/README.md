@@ -1,6 +1,6 @@
 # react-primitive-scripts
 
-The README for this package is hosted at https://github.com/react-community/create-react-primitive-app.
+The README for this package is hosted at https://github.com/theTechie/create-react-primitive-app.
 
 ## Development
 
