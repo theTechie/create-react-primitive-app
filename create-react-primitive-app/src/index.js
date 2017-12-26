@@ -275,8 +275,7 @@ function checkAppName(appName: string, packageName: string): void {
 		'expo',
 		'vector-icons',
 		'react',
-		'react-native'
-		//'react-primitives' // NOTE: not including until i figure out the version dependencies
+		'react-primitives'
 	]
 
 	if (allDependencies.indexOf(appName) >= 0) {

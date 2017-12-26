@@ -42,9 +42,6 @@ $ npm install -g create-react-primitive-app
   # or
 $ yarn global add create-react-primitive-app
 ```
-
-You'll need to have Node v6 or later on your machine. We strongly recommend using npm v3, v4, or a recent version of Yarn. Create React Primitive App does not currently work with npm v5 due to bugs in npm ([you can track the issue here](https://github.com/theTechie/create-react-primitive-app/issues/233#issuecomment-305638103)).
-
 ### Creating an App
 
 To create a new app, run:
@@ -96,7 +93,7 @@ If you're having issues with Create React Primitive App, please make sure:
 * The issue is not covered in the [Getting Started](https://github.com/theTechie/create-react-primitive-app#getting-started) or [User Guide](https://github.com/theTechie/create-react-primitive-app/blob/master/react-primitive-scripts/template/README.md) documentation
 * There is not already an [open issue](https://github.com/theTechie/create-react-primitive-app/issues) for your particular problem
 
-If you've checked the documentation and currently open issues, please either open a new GitHub issue, [find @dika10sune on Twitter](https://twitter.com/dika10sune), or ping `dikaiosune` on [Reactiflux](https://www.reactiflux.com/)'s #react-native channel on Discord. **Please do not DM or email project maintainers directly**, as it's very important that support takes place in public locations where others can benefit from the conversation.
+If you've checked the documentation and currently open issues, please either open a new GitHub issue, [find @gaganblr on Twitter](https://twitter.com/gaganblr), **Please do not DM or email project maintainers directly**, as it's very important that support takes place in public locations where others can benefit from the conversation.
 
 ## FAQs
 
