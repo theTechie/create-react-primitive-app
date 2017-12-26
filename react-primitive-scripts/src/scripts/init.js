@@ -12,8 +12,7 @@ import install from '../util/install'
 const DEFAULT_DEPENDENCIES = {
 	expo: '^20.0.0',
 	react: '16.0.0-alpha.12',
-	'react-native': '^0.47.0'
-	// 'react-primitives': '^0.4.3' // NOTE: not including until i figure out the version dependencies
+	'react-primitives': '^0.4.4'
 }
 
 // TODO figure out how this interacts with ejection
