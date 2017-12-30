@@ -10,7 +10,7 @@ import install from '../util/install'
 
 // UPDATE DEPENDENCY VERSIONS HERE
 const DEFAULT_DEPENDENCIES = {
-	expo: '^15.x.x',
+	expo: '^15.0.0',
 	react: '^15.4.0',
 	'react-dom': '^15.4.0',
 	'react-primitives': '^0.4.4'
@@ -18,10 +18,10 @@ const DEFAULT_DEPENDENCIES = {
 
 // TODO figure out how this interacts with ejection
 const DEFAULT_DEV_DEPENDENCIES = {
-	'jest-expo': '^15.x.x',
+	'jest-expo': '~15.0.0',
 	'react-test-renderer': '^15.4.0',
 	'react-scripts': '^1.0.17',
-	'react-native': '^0.42.x'
+	'react-native': '^0.42.0'
 }
 
 module.exports = async (
