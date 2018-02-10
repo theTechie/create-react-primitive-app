@@ -1,6 +1,6 @@
 {
 	"name": "create-react-primitive-app",
-	"version": "1.1.5",
+	"version": "1.1.7",
 	"description": "Create React cross-platform apps with no build configuration.",
 	"license": "BSD-3-Clause",
 	"keywords": [
