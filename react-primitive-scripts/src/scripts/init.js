@@ -13,7 +13,8 @@ const DEFAULT_DEPENDENCIES = {
   expo: "^23.0.0",
   react: "^16.0.0",
   "react-dom": "^16.0.0",
-  "react-primitives": "^0.5.0"
+  "react-primitives": "^0.5.0",
+  "react-native": "^0.50.0"
 };
 
 // TODO figure out how this interacts with ejection
@@ -21,7 +22,6 @@ const DEFAULT_DEV_DEPENDENCIES = {
   "jest-expo": "~23.0.0",
   "react-test-renderer": "^16.0.0",
   "react-scripts": "^1.0.17",
-  "react-native": "^0.50.0"
 };
 
 module.exports = async (
